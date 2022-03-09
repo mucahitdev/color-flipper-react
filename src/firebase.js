@@ -1,13 +1,13 @@
 import { initializeApp } from "firebase/app"
 import { getFirestore } from "firebase/firestore"
 const firebaseConfig = {
-  apiKey: "AIzaSyAQgVyBuyn0cGQtYuHPPvO0JevNhjalO88",
-  authDomain: "react-palet-color.firebaseapp.com",
-  databaseURL: "https://react-palet-color-default-rtdb.europe-west1.firebasedatabase.app",
+  apiKey: process.env.REACT_APP_API_KEY ,
+  authDomain: process.env.REACT_APP_AUTH,
+  databaseURL: process.env.REACT_APP_URL,
   projectId: "react-palet-color",
-  storageBucket: "react-palet-color.appspot.com",
-  messagingSenderId: "174872369412",
-  appId: "1:174872369412:web:b93555ac6124d6f8711851"
+  storageBucket: process.env.REACT_APP_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MES_SEND_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 
