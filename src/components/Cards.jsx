@@ -2,12 +2,16 @@ import React from 'react'
 import Card from './Card'
 
 
-const Cards = ({dataColor}) => {
-    console.log(dataColor)
+
+
+const Cards = ({palets}) => {
+
+    
+
   return (
-    <div className='flex flex-wrap justify-around'>
+    <div className='flex flex-wrap justify-around mb-auto'>
         {
-            dataColor.map((item,id) => (<Card key={id} {...item}/>))
+            palets.map((item,id) => (<Card key={id} {...item.data}/>))
         }
         
     </div>
